@@ -13,7 +13,7 @@ function ItemCard(props) {
             <div className = 'card m-3 shadow bg-white rounded' >
                 <img src={props.item.url} alt={props.item.name} className='card-img-top'/>
                 <div className='card-body'> 
-                    <Link to={`shop/${props.item.id}`}>
+                    <Link to={`/shop/${props.item.id}`}>
                         <h4 className ='card-title'>{props.item.name}</h4>
                     </Link>
                     <p className ='card-text'>Price: {props.item.price}$</p>

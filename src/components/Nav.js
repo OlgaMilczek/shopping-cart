@@ -1,11 +1,14 @@
 import React from 'react'; 
 import { Link } from 'react-router-dom';
+import { publicPath } from '../config';
+
+var path = require('path');
 
 function Nav(props) {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light shadow bg-white rounded">
             <Link to="/" className="navbar-brand">
-                <img  className='logo' src = './images/logo-mart.png' alt='logo' />
+                <img  className='logo' src={path.join(publicPath, 'images/logo-mart.png')} alt='logo' />
             </ Link>
       
             <div className="collapse navbar-collapse" id="navbarSupportedContent">

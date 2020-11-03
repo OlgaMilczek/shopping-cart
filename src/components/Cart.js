@@ -8,7 +8,7 @@ function Cart(props) {
     const cartElement = props.cart.items.map(item => {
         return (
             <tr key ={item.id}>
-                <th scope="col" ><Link to={`shop/${item.id}`}>{item.name}</Link></th>
+                <th scope="col" ><Link to={`/shop/${item.id}`}>{item.name}</Link></th>
                 <th scope="col">
                     <button className ='borderless-button' onClick= {() => props.decreesFromCart(item)}>{minus}</button> 
                     {item.quantity} 

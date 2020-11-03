@@ -7,6 +7,7 @@ import Cart from './components/Cart';
 import Shop from './components/Shop';
 import ItemDetails from './components/ItemDetails';
 import Footer from './components/Footer';
+import {publicPath} from './config';
 
 function App() {
     const [cart, setCart] = useState({
@@ -87,7 +88,7 @@ function App() {
 
     return (
         <div className='main-container'>
-            <BrowserRouter>
+            <BrowserRouter basename={publicPath}>
                 <Nav cartItems = {cart.numberOfItems}/>
                 <Switch>
                     <Route exact path="/" component={Home}/>
