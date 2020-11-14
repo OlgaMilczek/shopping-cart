@@ -1,7 +1,7 @@
 
 ## Simple app with shopping
 
-link: https://olganowakowska.github.io/shopping-cart/
+link: https://olgamilczek.github.io/shopping-cart/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
